@@ -22,3 +22,9 @@ h1{
 .square:hover{
 	background-color: yellow;
 }
+
+.winning-square{
+	background-color: magenta !important;
+	color: black !important;
+}
+
