@@ -42,9 +42,9 @@ function markSquare(currentSquare){
 		whosTurn = 2;
 		player1Squares.push(currentSquare.id)
 		checkWin(player1Squares,1);
-		
-		}if(onePlayerGame){
+		if(onePlayerGame){
 			computerMove();
+		}
 		
 	}else{
 		currentSquare.innerHTML = "O"
@@ -61,6 +61,7 @@ function markSquare(currentSquare){
 
 function computerMove(){
 	var guess = false;
+	while(guess == false){
 	var compTurn = squares[Math.floor(Math.random() * squares.length)]
 	if((compTurn.innerHTML == "X") || (compTurn.innerHTML == "O")){
 		// continue;
@@ -68,7 +69,7 @@ function computerMove(){
 		guess = true;
 		console.log(compTurn)
 		markSquare(compTurn);
-
+		}
 	}
 		// find a random square
 		// see if that square is empty
