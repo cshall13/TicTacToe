@@ -16,6 +16,10 @@ body{
 	float: none;
 	margin:	auto;
 }
+#message{
+	color: white;
+	font-size: 25px;
+}
 
 
 .square{
