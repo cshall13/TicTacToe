@@ -1,6 +1,13 @@
 h1{
-	color: blue;
-	font-size: 60px;
+	color: #ff7530;
+	font-size: 60px;	
+	font-family: 'Barrio', cursive;
+}
+body{
+	height: 100vh;
+	background: url('http://www.wallpaperup.com/uploads/wallpapers/2014/06/24/377589/big_thumb_38350a3152f132e5dbc4de5e802734b4.jpg');
+	background-size: cover;
+	text-align: center;
 }
 
 #board{
@@ -10,13 +17,17 @@ h1{
 	margin:	auto;
 }
 
+
 .square{
-	background-color: #FFF;
+	background-color: #930516;
+	z-index: -1;
 	border: 2px solid #000;
 	outline: none;
 	width: 30%;
+	height: 175px;
 	padding: 30px 0;
 	font-size: 80px;
+	vertical-align: top;
 }
 
 .square:hover{
@@ -24,7 +35,12 @@ h1{
 }
 
 .winning-square{
-	background-color: magenta !important;
+	background-color: #39a8b5 !important;
 	color: black !important;
+}
+.reset{
+	padding-top: 20px;
+	outline: none;
+	padding-bottom: 20px;
 }
 

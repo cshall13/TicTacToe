@@ -42,7 +42,7 @@ function markSquare(currentSquare){
 		whosTurn = 2;
 		player1Squares.push(currentSquare.id)
 		checkWin(player1Squares,1);
-		if(onePlayerGame){
+		if(onePlayerGame && !gameOverBool){
 			computerMove();
 		}
 		
@@ -112,3 +112,27 @@ function gameOver(whoJustWon,winningCombo){
 	}
 	gameOverBool = true;
 }
+
+
+var resetButton = document.getElementById('reset');
+resetButton.addEventListener('click',function(){
+	console.log("clicked")
+	for(let i = 0; i < squares.length; i++){
+		squares[i].innerHTML = "&nbsp;";
+		squares[i].className = "square";
+		console.log(squares[i]);
+	}
+	gameOverBool = false;
+	player1Squares = [];
+	player2Squares = [];
+	compSquares = [];
+	whosTurn = 1;
+
+});
+
+
+
+
+
+
+
